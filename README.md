@@ -1,4 +1,5 @@
-# 🚀 Bring Parser (JavaScript/TypeScript)
+# Bring Parser (JavaScript/TypeScript)
+![alt text](image.png)
 
 [![npm version](https://badge.fury.io/js/bring-parser.svg)](https://badge.fury.io/js/bring-parser)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
