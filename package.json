@@ -1,5 +1,5 @@
 {
-  "name": "bring-parser",
+  "name": "bring-parser-js",
   "version": "1.0.1",
   "description": "Parser for the Bring file format - modern configuration and package management for JavaScript/TypeScript",
   "main": "dist/index.js",
@@ -24,7 +24,7 @@
   },
   "keywords": [
     "bring",
-    "parser", 
+    "parser",
     "configuration",
     "config",
     "easierlang",
@@ -45,12 +45,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/daftyon/bring-parser-js.git"
+    "url": "git+https://github.com/daftyon/Bring-js.git"
   },
   "bugs": {
-    "url": "https://github.com/daftyon/bring-parser-js/issues"
+    "url": "https://github.com/daftyon/Bring-js/issues"
   },
-  "homepage": "https://github.com/daftyon/bring-parser-js#readme",
+  "homepage": "https://github.com/daftyon/Bring-js#readme",
   "engines": {
     "node": ">=14.0.0"
   },
@@ -71,8 +71,12 @@
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
-    "roots": ["<rootDir>/src"],
-    "testMatch": ["**/__tests__/**/*.test.ts"],
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.test.ts"
+    ],
     "transform": {
       "^.+\\.ts$": "ts-jest"
     },
@@ -82,8 +86,16 @@
       "!src/__tests__/**"
     ],
     "coverageDirectory": "coverage",
-    "coverageReporters": ["text", "lcov", "html"],
-    "moduleFileExtensions": ["ts", "js", "json"],
+    "coverageReporters": [
+      "text",
+      "lcov",
+      "html"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ],
     "testTimeout": 10000,
     "verbose": true
   }
