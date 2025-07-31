@@ -1,10 +1,10 @@
 # Bring Parser (JavaScript/TypeScript)
 ![alt text](image.png)
 
-[![npm version](https://badge.fury.io/js/bring-parser.svg)](https://badge.fury.io/js/bring-parser)
+[![npm version](https://badge.fury.io/js/bring-parser-js.svg)](https://badge.fury.io/js/bring-parser-js)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://github.com/daftyon/bring-parser-js/workflows/CI/badge.svg)](https://github.com/daftyon/bring-parser-js/actions)
+[![Build Status](https://github.com/daftyon/bring-parser-js-js/workflows/CI/badge.svg)](https://github.com/daftyon/bring-parser-js-js/actions)
 
 A modern, human-readable configuration and package management format parser for JavaScript and TypeScript. **Bring** combines the best features of JSON, YAML, and XML while solving their key limitations.
 
@@ -22,11 +22,11 @@ A modern, human-readable configuration and package management format parser for 
 ## 🔧 Installation
 
 ```bash
-npm install bring-parser
+npm install bring-parser-js
 # or
-yarn add bring-parser
+yarn add bring-parser-js
 # or
-pnpm add bring-parser
+pnpm add bring-parser-js
 ```
 
 ## 🚀 Quick Start
@@ -34,7 +34,7 @@ pnpm add bring-parser
 ### Basic Usage
 
 ```typescript
-import { parse, toObject } from 'bring-parser';
+import { parse, toObject } from 'bring-parser-js';
 
 // Parse Bring configuration
 const config = `
@@ -66,7 +66,7 @@ console.log(data.database.host); // "localhost"
 ### TypeScript Support
 
 ```typescript
-import { parse, toObject, BringValue, ParseResult } from 'bring-parser';
+import { parse, toObject, BringValue, ParseResult } from 'bring-parser-js';
 
 interface AppConfig {
   app: {
@@ -239,7 +239,7 @@ The parser works in all modern browsers and Node.js environments:
 ### Browser (ES Modules)
 ```html
 <script type="module">
-  import { parse, toObject } from 'https://unpkg.com/bring-parser/dist/index.esm.js';
+  import { parse, toObject } from 'https://unpkg.com/bring-parser-js/dist/index.esm.js';
   
   const result = parse('name = "Browser"');
   console.log(toObject(result));
@@ -248,7 +248,7 @@ The parser works in all modern browsers and Node.js environments:
 
 ### Browser (UMD)
 ```html
-<script src="https://unpkg.com/bring-parser/dist/index.umd.js"></script>
+<script src="https://unpkg.com/bring-parser-js/dist/index.umd.js"></script>
 <script>
   const { parse, toObject } = BringParser;
   const result = parse('name = "Browser"');
@@ -258,7 +258,7 @@ The parser works in all modern browsers and Node.js environments:
 
 ### Node.js (CommonJS)
 ```javascript
-const { parse, toObject } = require('bring-parser');
+const { parse, toObject } = require('bring-parser-js');
 
 const result = parse('name = "Node.js"');
 console.log(toObject(result));
@@ -353,7 +353,7 @@ users = [
 
 ### Custom Error Handling
 ```typescript
-import { parse, BringParseError } from 'bring-parser';
+import { parse, BringParseError } from 'bring-parser-js';
 
 try {
   const result = parse(invalidBringContent);
@@ -366,7 +366,7 @@ try {
 
 ### Working with Attributes
 ```typescript
-import { parse, extractAttributes } from 'bring-parser';
+import { parse, extractAttributes } from 'bring-parser-js';
 
 const config = `
 port = 8080 @min=1024 @max=65535 @env="PORT"
@@ -383,7 +383,7 @@ console.log(attributes);
 ### Stream Processing (Node.js)
 ```typescript
 import fs from 'fs';
-import { parse, toObject } from 'bring-parser';
+import { parse, toObject } from 'bring-parser-js';
 
 // Read large Bring files
 const content = fs.readFileSync('large-config.bring', 'utf-8');
@@ -439,15 +439,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Related Projects
 
-- **[bring-parser (Python)](https://pypi.org/project/bring-parser/)** - Python implementation
+- **[bring-parser-js (Python)](https://pypi.org/project/bring-parser-js/)** - Python implementation
 - **[bring-vscode-extension](https://marketplace.visualstudio.com/items?itemName=daftyon.bring)** - VS Code syntax highlighting
 - **EasierLang** - Programming language using Bring for package management
 - **Daftyon Hub** - Package repository for EasierLang
 
 ## 🙋‍♂️ Support
 
-- **GitHub Issues**: [Report bugs or request features](https://github.com/daftyon/bring-parser-js/issues)
-- **Documentation**: [API Documentation](https://bring-parser-js.docs.daftyon.com/)
+- **GitHub Issues**: [Report bugs or request features](https://github.com/daftyon/bring-parser-js-js/issues)
+- **Documentation**: [API Documentation](https://bring-parser-js-js.docs.daftyon.com/)
 - **Email**: contact@daftyon.com
 
 ---
