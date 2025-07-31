@@ -1,6 +1,6 @@
 {
   "name": "bring-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parser for the Bring file format - modern configuration and package management for JavaScript/TypeScript",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
